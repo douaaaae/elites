@@ -135,7 +135,7 @@ export default function Homw() {
        <div className="idk2">
          <div className="hero-text">
             <h1 className="main-title">{text.lim}</h1>
-            <h3 className="rotating-tagline" >{text.taglines.currentTagline}</h3>
+            <h3 className="rotating-tagline" >{text.taglines[currentTaglineIndex]}</h3>
          </div>
        </div>
         <div className="ima">
