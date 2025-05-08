@@ -1,0 +1,42 @@
+.sign{
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.479);
+    color: rgb(222, 222, 222);
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.sign:active{
+    color: white;
+    background-color: black;
+}
+.sign a{
+    color: white;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    list-style: none;
+
+}
+
+.nav li{
+    gap: 20px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+.nunito, p, h4, ul{
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+.img2{
+    width: 130px;
+}

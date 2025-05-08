@@ -1,0 +1,59 @@
+
+.card{
+    width:280px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(203, 202, 202, 0.2); 
+    border-radius: 21px 21px;
+    height: 300px;
+    margin-top: 25px;
+}
+  h2, p{
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-left: 18px;
+}  
+.card-img{
+    display: block;
+    margin: auto;
+    height: 220px;
+    margin-top: -30px;
+}
+.card-text{
+    line-height: 25px;
+}
+a{
+    font-family: "Fredoka", sans-serif;
+    font-style: normal;
+}
+.price{
+    font-weight: bold;
+}
+.div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 190px;
+}
+.big-dot{
+    font-weight: bolder;
+    font-size: "1px";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.line{
+    
+        width: 1px;
+        height: 20px; /* Adjust height as needed */
+        background-color: gray; /* Adjust color */
+        margin: 0 10px;
+
+}
+.line1{
+     
+    width: 1px;
+    height: 20px; /* Adjust height as needed */
+    background-color: gray; /* Adjust color */
+    margin: 0 10px; 
+}

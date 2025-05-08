@@ -1,0 +1,61 @@
+.diviv{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.852);
+    color: white;
+}
+.divid1{
+    display: flex;
+    justify-content: space-around;
+}
+.divid2{
+    margin-left: -30px;
+}
+.paragraph{
+    padding-top: 100%;
+}
+.inputs{
+    margin-left: -16px;
+}
+.inputs button{
+    background-color: whitesmoke;
+    border-radius: 0%;
+    margin-left: 10px;
+    border: none;
+    height: 44px;
+    width: 230px;
+}
+.inputs input{
+    height: 10px ;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #797979;
+    width: auto;
+    max-width: 200px;
+    padding: 20px;
+    size: 1188px;
+    color: white;
+}
+.diviid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wid23{
+    display: flex;
+    justify-content: center;
+}
+.pat{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.select{
+    width:130px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+.select option{
+    color: #333;
+}
