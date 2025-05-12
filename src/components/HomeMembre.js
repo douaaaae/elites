@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { Link , useNavigate } from 'react-router-dom'
-import Navbar from './Navbar'
+import { Link, useNavigate } from 'react-router-dom'
+import Navbar from './MemberNav'
 import logo1 from "../images/P18_0435-removebg-preview.png"
 import logo2 from "../images/download (12).jpeg"
 import car2 from "../images/car 2.jpeg"
@@ -11,9 +11,7 @@ import idk2 from "../images/cars15.jpeg"
 import idk3 from "../images/cars3.jpeg"
 import Footer from './Footer';
 import "./home.css";
-
-
-export default function Homw() {
+export default function HomeMembre() {
     const all=[
         {id: 1, pic:car2, title:"Ferrari 812 Superfast", price: "500 dh", dec:"Petrol . Mileage: 18031"},
         {id: 2, pic:idk, title:"Ferrari 812 Superfast", price: "500 dh", dec:"Petrol . Mileage: 18031"},        
@@ -119,16 +117,16 @@ export default function Homw() {
       const text= translations[Language];
 
       const history = useNavigate();
-
-      const [age, setAge] = useState('');
-    const [license, setLicense] = useState('');
-    const [pickupDate, setPickupDate] = useState('');
-    const [returnDate, setReturnDate] = useState('');
-
-    const handleSearch = () => {
-        // Redirect to the search results page with query parameters
-        history(`/cars?age=${age}&license=${license}&pickupDate=${pickupDate}&returnDate=${returnDate}`);
-    };
+      
+            const [age, setAge] = useState('');
+          const [license, setLicense] = useState('');
+          const [pickupDate, setPickupDate] = useState('');
+          const [returnDate, setReturnDate] = useState('');
+      
+          const handleSearch = () => {
+              // Redirect to the search results page with query parameters
+              history(`/cars2?age=${age}&license=${license}&pickupDate=${pickupDate}&returnDate=${returnDate}`);
+          };
 
   return (
     <div className='body225'>
@@ -148,7 +146,7 @@ export default function Homw() {
         </div>
         
         <div class="divm">
-            <div>
+        <div>
                 <h5>{text.pick}</h5>
                 <input className='input55' type="text" placeholder="Enter Your age..." value={age} 
                 onChange={(e) => setAge(e.target.value)}   required/>
@@ -195,7 +193,7 @@ export default function Homw() {
      
     </div>
     <div style={{display:"flex", marginTop:"15px", justifyContent:"center"}}>
-       <Link to="/cars">
+       <Link to="/cars2">
        <button onClick={toggleButton} style={{ color: isToggled ? 'black' : 'white',backgroundColor: isToggled ? 'white' : 'black',padding: '10px 20px',border: '0.2px solid grey',borderRadius: '5px',cursor: 'pointer',}}>
     {text.btn1}
     </button>

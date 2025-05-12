@@ -1,59 +1,193 @@
 
-.card{
-    width:280px;
-    background-color: #ffffff;
-    box-shadow: 5px 5px 15px rgba(203, 202, 202, 0.2); 
-    border-radius: 21px 21px;
-    height: 300px;
-    margin-top: 25px;
-}
-  h2, p{
-    font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  padding-left: 18px;
-}  
-.card-img{
-    display: block;
-    margin: auto;
-    height: 220px;
-    margin-top: -30px;
-}
-.card-text{
-    line-height: 25px;
-}
-a{
-    font-family: "Fredoka", sans-serif;
-    font-style: normal;
-}
-.price{
-    font-weight: bold;
-}
-.div{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-top: 190px;
-}
-.big-dot{
-    font-weight: bolder;
-    font-size: "1px";
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.line{
-    
-        width: 1px;
-        height: 20px; /* Adjust height as needed */
-        background-color: gray; /* Adjust color */
-        margin: 0 10px;
+.div88 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
 
+  .div77 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colonnes */
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+
+  .h22 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    color: white;
+    margin-top: 5%;
+  }
+  .marque22{
+    font-weight: bold;
+  }
+  
+  .p22 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    color: black;
+    width: 90%;
+    height: 85%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+  }
+  .card .card-text {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .card a {
+    cursor: pointer;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
-.line1{
-     
-    width: 1px;
-    height: 20px; /* Adjust height as needed */
-    background-color: gray; /* Adjust color */
-    margin: 0 10px; 
+.btn button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: maroon;
+    text-align: center;
+    font-family: "Bowlby One SC", serif;
+    color: rgba(255, 255, 255, 0.861);
+    cursor: pointer;
+}
+.form{
+    width: 500px;
+}
+.form .inputa{
+    background-color: transparent;
+    border: none;
+    color: #ffffffe2;
+    outline: none;
+}
+.porte{
+    margin-left: 60px;
+}
+.prix{
+    margin-left: 70px;
+}
+.in22{
+    width: 300px;
+}
+.in23{
+  margin-left: 58px; 
+}
+.in24{
+  margin-left: 35px;
+}
+
+
+@media (max-width: 1200px) {
+  .div77 {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+  }
+  .div88 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div77,
+  .div88 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 15px;
+    margin-left: 5px;
+    margin-top: 2%;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .h22 {
+    font-size: 28px;
+  }
+
+  .p22 {
+    font-size: 16px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .in22 {
+    width: 40%;
+  }
+
+  .btn button {
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .saveclose{
+    margin-top: 2%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .div77,
+  .div88 {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 10px;
+    margin-top: 5%;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .h22 {
+    font-size: 22px;
+  }
+
+  .p22 {
+    font-size: 14px;
+  }
+
+  .btn button {
+    width: 100%;
+    height: 36px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .in22 {
+    width: 100%;
+  }
+ 
 }

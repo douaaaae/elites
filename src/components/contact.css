@@ -1,0 +1,212 @@
+/* Contact Us Page Styling */
+
+.contact-us2 {
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 3%;
+}
+
+.contact-us2 .heading2 {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 42px;
+    color: #333;
+    font-weight: bold;
+}
+.contact-us2 .heading2 span{
+    color: black;
+}
+
+.contact-container2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.contact-info2,
+.contact-form2 {
+    flex: 1;
+    width: 100px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.contact-info2{
+    margin-left: 50px;
+    padding: 20px;
+}
+.contact-form2{
+    margin-right: 80px;
+}
+
+.contact-info2 h3,
+.contact-form2 h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info2 p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+.iconss2{
+    margin-top: 10%;
+}
+
+.info-item2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+
+.info-item2 i {
+    font-size: 18px;
+    color: #dd0707;
+    margin-bottom: 3%;
+}
+
+.contact-form2 .form-group {
+    margin-bottom: 20px;
+    width: 580px;
+}
+
+.contact-form2 .label2 {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form2 .input2,
+.contact-form2 .textarea2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.contact-form2 .textarea2{
+    margin-left:2.5%;
+}
+
+.contact-form2 .input2:focus,
+.contact-form2 .textarea2:focus {
+    border-color: #dd0707;
+    outline: none;
+}
+
+.contact-form2 .btn2 {
+    background-color: #dd0707;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form2 .btn2:hover {
+    background-color: #f54545;
+}
+
+
+
+.bodyy {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            
+        }
+.map-container {
+            width: 80%;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 2%;
+        }
+iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+
+        @media (max-width: 1024px) {
+            .contact-form2 .form-group {
+                width: 100%;
+            }
+        
+            .contact-form2 {
+                margin-right: 0;
+            }
+        
+            .contact-info2 {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container2 {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .contact-info2,
+            .contact-form2 {
+                width: 90%;
+                margin: 10px 0;
+            }
+        
+            .contact-form2 .form-group {
+                width: 100%;
+            }
+        
+            .contact-form2 .textarea2 {
+                margin-left: 0;
+            }
+        
+            .map-container {
+                width: 95%;
+            }
+        
+            .contact-us2 .heading2 {
+                font-size: 32px;
+            }
+        
+            .contact-info2 h3,
+            .contact-form2 h3 {
+                font-size: 20px;
+            }
+        
+            .contact-form2 .btn2 {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-us2 .heading2 {
+                font-size: 26px;
+            }
+        
+            .contact-info2 p {
+                font-size: 13px;
+            }
+        
+            .info-item2 i {
+                font-size: 16px;
+            }
+        }
+        
+
+        

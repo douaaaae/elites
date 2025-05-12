@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    height: 80px;
 }
 .sign:active{
     color: white;
@@ -25,6 +26,7 @@
     flex-wrap: wrap;
     gap: 28px;
     list-style: none;
+    margin-top: 2%;
 
 }
 
@@ -38,5 +40,13 @@
     font-style: normal;
 }
 .img2{
-    width: 130px;
+    width: 80px;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.log{
+    margin-top: 1%;
 }

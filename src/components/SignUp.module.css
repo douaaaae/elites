@@ -1,0 +1,7 @@
+/* SignUp.module.css */
+.localPage * {
+    padding: 25;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+  }

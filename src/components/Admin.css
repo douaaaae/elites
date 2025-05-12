@@ -1,4 +1,4 @@
-.p22{
+/* .p22{
     text-align: center;
     
   }
@@ -10,11 +10,7 @@
     font-size: 30px;
   }
   .div88{
-  /*   display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-top: 90px; */
+ 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -49,6 +45,4 @@
 .prix{
     margin-left: 48px;
 }
-.marc{
-    
-}
+  */
