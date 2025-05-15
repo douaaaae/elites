@@ -10,6 +10,7 @@ import idk from "../images/download (13).jpeg"
 import idk2 from "../images/cars15.jpeg"
 import idk3 from "../images/cars3.jpeg"
 import Footer from './Footer';
+import { FaCircleArrowRight, FaCircleArrowLeft } from 'react-icons/fa6'
 import "./home.css";
 
 
@@ -32,10 +33,20 @@ export default function Homw() {
     const toggleButton = () => {
       setIsToggled((prev) => !prev);
     };
-    const [startIndex, setStartIndex] = useState(0);
+       const [startIndex, setStartIndex] = useState(0);
     const itemsToShow = 3;
   
-    useEffect(() => {
+    const handleNextSlide = () => {
+        setStartIndex((prevIndex) =>
+          (prevIndex + 1) % all.length
+        );
+      };
+    const handlePrev = () =>{
+        setStartIndex((prevIndex)=>
+            (prevIndex-1 + all.length) % all.length);
+    };
+  
+  /*   useEffect(() => {
       const interval = setInterval(() => {
         setStartIndex((prevIndex) =>
           (prevIndex + itemsToShow) % all.length
@@ -43,7 +54,7 @@ export default function Homw() {
       }, 3000); // Slide every 3 seconds
   
       return () => clearInterval(interval);
-    }, []);
+    }, []); */
   
     // Wrap-around support for slicing
     const visibleItems =
@@ -155,7 +166,7 @@ export default function Homw() {
             </div>
             <div>
                 <h5>{text.ret}</h5>
-                <input className='input55' type="text" placeholder="Enter Your permis..." value={license} 
+                <input className='input55' type="text" placeholder="Enter Your license..." value={license} 
                 onChange={(e) => setLicense(e.target.value)}  required/>
             </div>
             <div>
@@ -173,6 +184,27 @@ export default function Homw() {
             </div>
            </div>
       </div>
+          <div  style={{  display: "flex",flexWrap: "wrap",justifyContent: "center",alignItems: "flex-start",  padding: "60px 20px",  gap: "5%",   color: "black", paddingTop:"100px"}} className='divab'>
+       <div style={{ maxWidth: "500px", flex: "1" }}>
+        <h1 style={{ color: "maroon" }}>{text.abts}</h1>
+        <p style={{ marginTop: "20px", lineHeight: "1.6" }}> {text.abts2}</p>
+        <p style={{ marginTop: "60px", fontWeight: "bold" }}>AMINE KADIRI - CEO Founder</p>
+   </div>
+
+    <div style={{display: "flex", gap:"20px",justifyContent:"center", flexWrap:"wrap"}}>
+        <div >
+            <img src={logo2} alt="" style={{width:"280px", borderRadius: "20px"}}/>
+        </div>
+        <div style={{ height: "auto", width: "300px", display:"block"}} >
+            <div style={{backgroundColor:"rgba(47, 47, 47, 0.84)"  ,width: "330px" ,borderRadius: "20px"}}>                    
+                <h1 style={{textAlign: "center", marginTop: "7px", color:"white", paddingBottom:"10px"}}> <span className='str'>+39 {text.abts4}</span> <br/> <span className="exp">{text.abts3}</span></h1> 
+            </div>
+                <img src={rolls} alt="" style={{width:"330px", borderRadius: "20px", }} className='no' />
+    
+            </div>
+        </div>
+        
+</div>
       <div>
         <div className='divf'>
             <h1>{text.browse} <br /> {text.browse2}</h1>
@@ -185,15 +217,24 @@ export default function Homw() {
 
       <div className="car-slider" style={{ display: "flex", gap: "20px", overflow: "hidden" }}>
        {visibleItems.map((car) => (
-        <div key={car.id} className="car-card" style={{ minWidth: "250px", padding: "10px", background: "#fff", borderRadius: "12px" }}>
+        <div key={car.id} className="car-card" style={{ minWidth: "250px", padding: "10px", background: "#fff", borderRadius: "12px" }} onClick={handleNextSlide}>
           <img src={car.pic} alt={car.title} style={{ width: "100%", borderRadius: "8px" }} />
           <h2>{car.title}</h2>
           <p>{car.price}</p>
           <p>{car.dec}</p>
         </div>
+        
       ))}
-     
+ 
     </div>
+     {/*      <div style={{display:"flex", justifyContent:"center", marginTop:"20px"}}>
+    <button onClick={handlePrev} className='text-2xl'>
+                <FaCircleArrowLeft style={{height:"30px", width:"30px"}} />
+            </button>
+            <button onClick={handleNextSlide} className='text-2xl'>
+        <FaCircleArrowRight className="w-6 h-6" style={{ width: "30px", height: "30px" }}/>
+      </button>
+    </div> */}
     <div style={{display:"flex", marginTop:"15px", justifyContent:"center"}}>
        <Link to="/cars">
        <button onClick={toggleButton} style={{ color: isToggled ? 'black' : 'white',backgroundColor: isToggled ? 'white' : 'black',padding: '10px 20px',border: '0.2px solid grey',borderRadius: '5px',cursor: 'pointer',}}>
@@ -224,27 +265,7 @@ export default function Homw() {
         </div>
     </div> */}
     
-    <div  style={{  display: "flex",flexWrap: "wrap",justifyContent: "center",alignItems: "flex-start",  padding: "60px 20px",  gap: "5%",   color: "black", paddingTop:"60px"}}>
-       <div style={{ maxWidth: "500px", flex: "1" }}>
-        <h1 style={{ color: "maroon" }}>{text.abts}</h1>
-        <p style={{ marginTop: "20px", lineHeight: "1.6" }}> {text.abts2}</p>
-        <p style={{ marginTop: "60px", fontWeight: "bold" }}>AMINE KADIRI - CEO Founder</p>
-   </div>
 
-    <div style={{display: "flex", gap:"20px",justifyContent:"center", flexWrap:"wrap"}}>
-        <div >
-            <img src={logo2} alt="" style={{width:"280px", borderRadius: "20px"}}/>
-        </div>
-        <div style={{ height: "auto", width: "300px", display:"block"}} >
-            <div style={{backgroundColor:"rgba(47, 47, 47, 0.84)"  ,width: "330px" ,borderRadius: "20px"}}>                    
-                <h1 style={{textAlign: "center", marginTop: "7px", color:"white", paddingBottom:"10px"}}> <span className='str'>+39 {text.abts4}</span> <br/> <span className="exp">{text.abts3}</span></h1> 
-            </div>
-                <img src={rolls} alt="" style={{width:"330px", borderRadius: "20px", }} className='no' />
-    
-            </div>
-        </div>
-        
-</div>
 
       <div class="market">
         <h1>{text.market} <br /> {text.market1}</h1>

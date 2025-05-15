@@ -7,12 +7,23 @@
     margin-top: 10px;
     margin-right: 10px;
     border: none;
+    align-items: center;
+}
+.log{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     color: white;
-    height: 80px;
+}
+.nav a {
+    text-decoration: none;
+    color: white; /* Ensure link text stays white */
 }
 .sign:active{
     color: white;
@@ -26,27 +37,89 @@
     flex-wrap: wrap;
     gap: 28px;
     list-style: none;
-    margin-top: 2%;
-
+    text-decoration: none;
 }
 
 .nav li{
     gap: 20px;
     font-family: "Nunito", sans-serif;
     font-style: normal;
+    color: white;
+    text-decoration: none;
 }
 .nunito, p, h4, ul{
     font-family: "Nunito", sans-serif;
     font-style: normal;
 }
 .img2{
-    width: 80px;
-    margin-left: 20px;
+    width: 130px;
 }
-a{
-    text-decoration: none;
-    color: white;
+.navbar-menu {
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  list-style: none;
+  gap: 20px;
+  flex-grow: 1; /* Allow it to take up space */
 }
-.log{
-    margin-top: 1%;
+
+.navbar-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* This helps center in many cases */
 }
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 98%;
+    margin-top: -40px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  .bar2{
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: row;
+      width: 100%;
+      background-color: transparent;
+      position: absolute;
+      top: 60px;
+      text-align: end;
+      margin-left: -20px;
+      padding-left: 20px;
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    .navbar-item {
+      margin: 0;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }

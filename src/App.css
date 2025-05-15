@@ -1,4 +1,4 @@
-body{
+/* body{
   margin: 0;
   padding: 0;
   background: linear-gradient(rgba(240, 248, 255, 0.438), rgba(240, 248, 255, 0.274))
@@ -27,7 +27,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* transparent dark overlay */
+  background-color: rgba(0, 0, 0, 0.4); 
   display: flex;
   justify-content: center;
   color: white;
@@ -40,10 +40,7 @@ body{
   font-style: normal;
   font-size: 42px;
 }
-  /* .ima{
-    display: block;
-    margin: auto;
-  } */
+
 .idk p{
   margin-top: 65%;
 }
@@ -518,16 +515,12 @@ input::placeholder{
 .car-card:hover {
   transform: scale(1.02);
 }
-/* .car-slider {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-} */
+
 
 .dt{
   width: 180px;
 }
 label{
   margin-left: 20px;
-}
+  text-align: center;
+} */

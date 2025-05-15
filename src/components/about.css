@@ -72,7 +72,8 @@ body{
 
 /* Style de la partie gauche (titre et texte principal) */
 .left {
-    flex: 1;
+    flex: 2;
+    margin-right: 50px;
 }
 
 .left h1 {
@@ -152,6 +153,9 @@ body{
     color: #e6e3e3;
     letter-spacing: 1.9;
 }
+.stsp{
+  margin-bottom: -20px;
+}
 .stats-card2 {
     background-color: #05224A;
     border-radius: 15px;
@@ -208,10 +212,10 @@ body{
     background: #fff;
     border-radius: 15px;
     max-width: 1200px;
-    margin-left: 11.5%;
-    margin-top: 50px;
+    margin: 50px 11.5% ;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    
 }
 
 /* Sous-titre */

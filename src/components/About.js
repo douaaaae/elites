@@ -72,7 +72,7 @@ export default function About() {
               <div className="image-row">
                 <div className="stats-card2">
                   <h2>500+</h2><br />
-                  <p>Happy <br /> Customers</p>
+                  <p className='stsp'>Happy <br /> Customers</p>
                 </div>
                 <div className="image-box small">
                   <img src="car.jpg" alt="Car in desert" />

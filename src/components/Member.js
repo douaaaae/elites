@@ -149,7 +149,7 @@ export default function Member() {
           </div>
           <div>
             <h5>Permis</h5>
-            <input className='input55' type="text" value={license} placeholder="Enter your permis" onChange={(e) => setLicense(e.target.value)} />
+            <input className='input55' type="text" value={license} placeholder="Enter your license" onChange={(e) => setLicense(e.target.value)} />
           </div>
           <div>
             <h5>Pick Up Date</h5>
@@ -165,11 +165,11 @@ export default function Member() {
         </div>
       </div>
 
-      <div className="divm">
+      <div className="divn">
         <div>
-          <label>Brand</label><br />
+        
           <select value={filterMarque} onChange={(e) => setFilterMarque(e.target.value)}>
-            <option value="">Toutes</option>
+            <option value="">Brand</option>
             <option value="Citroën">Citroën</option>
             <option value="Renault">Renault</option>
             <option value="Hyundai">Hyundai</option>
@@ -180,9 +180,9 @@ export default function Member() {
           </select>
         </div>
         <div>
-          <label>Speed</label><br />
+          
           <select value={filterBoite} onChange={(e) => setFilterBoite(e.target.value)}>
-            <option value="">Toutes</option>
+            <option value="">Speed</option>
             <option value="Automatique">Automatique</option>
             <option value="Manuelle">Manuelle</option>
           </select>

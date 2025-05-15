@@ -16,7 +16,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative;
-    height: 70vh;
+    height: 80vh;
     position: relative;
   
   }
@@ -40,10 +40,11 @@
     font-style: normal;
     font-size: 42px;
   }
-    /* .ima{
+     .ima{
       display: block;
-      margin: auto;
-    } */
+      margin: auto 50px;
+      
+    } 
   .idk p{
     margin-top: 65%;
   }
@@ -68,9 +69,7 @@
     font-size: 40px;
   }
   
-  .img2{
-    width: 130px;
-  }
+
   .scroll-down {
     position: absolute;
     bottom: 20px;
@@ -133,7 +132,7 @@
     background-color: white;
     border-radius: 5px;
     position: absolute;
-    top: 95%;
+    top: 90%;
   }
   .divm h5{
     color: rgb(0, 0, 0);
@@ -414,6 +413,13 @@
     .no{
       display: none !important;
     }
+    .divm{
+      margin-top: -50px;
+      display: flex;
+    }
+    .divap{
+      margin-top: 140px;
+    }
   }
   
   .hero-text {
@@ -475,7 +481,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-top: 90px;
+    padding-top: 4%;
   }
   .divf h1{
     margin-left: 10px;
@@ -516,9 +522,12 @@
     width: 480px;
   
   }
+/*   .car-card{
+    transition: 2ms ease-in-out
+  } */
   
   .car-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   /* .car-slider {
     display: flex;
