@@ -82,9 +82,9 @@
   
   .bar {
     width: 25px;
-    height: 2px;
-    background-color: white;
-    margin: 4px 0;
+    height: 3px;
+    background-color: red;
+    margin: 2.3px 0;
     transition: 0.4s;
   }
   .bar2{
@@ -99,19 +99,13 @@
   @media (max-width: 768px) {
     .navbar-menu {
       display: none;
-      flex-direction: row;
-      width: 100%;
-      background-color: black;
-      color: aliceblue;
-      position: absolute;
-      top: 60px;
-      text-align: end;
-      margin-left: -20px;
-      padding-left: 20px;
     }
   
     .navbar-menu.active {
       display: flex;
+      flex-direction: column;
+      width: 96%;
+      top: 50px;     
     }
   
     .navbar-item {
@@ -123,4 +117,52 @@
     .navbar-toggle {
       display: flex;
     }
+    .navbar-menu ul {
+  flex-direction: column;
+  gap: 16px;
+  padding: 1rem 0;
+}
+
+.log {
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
   }
+
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+    align-items: start;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.941);
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .log {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+}

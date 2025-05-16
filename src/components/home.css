@@ -20,7 +20,7 @@
     position: relative;
   
   }
-  
+
   .idk2{
     position: absolute;
     top: 0;
@@ -155,6 +155,7 @@
   .container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-right: 20px;
     width: 100px;
@@ -165,7 +166,6 @@
     width: 180px;
     border-radius: 5px;
     border: none;
-    
   }
   .sign{
     border-radius: 20px;
@@ -408,19 +408,24 @@
  
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px)and (min-width: 480px) {
 
     .no{
       display: none !important;
     }
     .divm{
-      margin-top: -50px;
+      margin-top: -90px;
       display: flex;
     }
-    .divap{
+    .divab{
       margin-top: 140px;
     }
+    .iml{
+      margin-left: 12px;
+    }
   }
+
+
   
   .hero-text {
     padding-top: 10px;

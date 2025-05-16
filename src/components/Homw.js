@@ -193,7 +193,7 @@ export default function Homw() {
 
     <div style={{display: "flex", gap:"20px",justifyContent:"center", flexWrap:"wrap"}}>
         <div >
-            <img src={logo2} alt="" style={{width:"280px", borderRadius: "20px"}}/>
+            <img src={logo2} alt="" style={{width:"280px", borderRadius: "20px"}} className='iml'/>
         </div>
         <div style={{ height: "auto", width: "300px", display:"block"}} >
             <div style={{backgroundColor:"rgba(47, 47, 47, 0.84)"  ,width: "330px" ,borderRadius: "20px"}}>                    
