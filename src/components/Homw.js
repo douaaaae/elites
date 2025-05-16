@@ -172,14 +172,14 @@ export default function Homw() {
             <div>
                 <h5>{text.pickd}</h5>
                 <input className='input55' type="datetime-local"  value={pickupDate} 
-                onChange={(e) => setPickupDate(e.target.value)} required />
+                onChange={(e) => setPickupDate(e.target.value)} required style={{width:"200px"}} />
             </div>
             <div>
                 <h5>{text.retd}</h5>
                 <input className='input55' type="datetime-local" value={returnDate} 
-                onChange={(e) => setReturnDate(e.target.value)}   required/>
+                onChange={(e) => setReturnDate(e.target.value)}   required style={{width:"200px"}}/>
             </div>
-            <div class="container">
+            <div class="container" style={{margin:"auto", display:"block"}}>
                <button onClick={handleSearch} style={{color: "white", backgroundColor: "rgb(221, 29, 29)", width:"90px", marginTop:"30px"}}>Search Car</button>
             </div>
            </div>
@@ -242,31 +242,6 @@ export default function Homw() {
     </button>
        </Link>
     </div>
-   
- {/*      <div class="market">
-        <h1>Check out <br /> our marketplace</h1>
-        <p>Find your drive through our easy service </p>
-    </div>
-    <div class="cards">
-        <div class="first">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-240v-320 13-173 480Zm0-400h640v-80H160v80Zm303 480H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v213q-35-25-76.5-39T716-560q-57 0-107.5 21.5T520-480H160v240h279q3 21 9 41t15 39Zm213 80-12-60q-12-5-22.5-10.5T620-164l-58 18-40-68 46-40q-2-13-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T664-420l12-60h80l12 60q12 5 22.5 10.5T812-396l58-18 40 68-46 40q2 13 2 26t-2 26l46 40-40 68-58-18q-11 8-21.5 13.5T768-140l-12 60h-80Zm40-120q33 0 56.5-23.5T796-280q0-33-23.5-56.5T716-360q-33 0-56.5 23.5T636-280q0 33 23.5 56.5T716-200Z"/></svg></i>
-            <h4>No credit card needed</h4>
-            <p>Tap the Rent icon in the Cabx app and complete your reservation. You can choose to pay in advance to save money.</p>
-        </div>
-        <div class="second">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m520-384 56-56-96-96v-184h-80v216l120 120ZM368-249q16-48 56.5-79.5T518-360h152q24-34 37-74.5t13-85.5q0-117-81.5-198.5T440-800q-117 0-198.5 81.5T160-520q0 98 58.5 172.5T368-249ZM520-40q-58 0-102-36.5T363-168q-122-26-202.5-124T80-520q0-150 105-255t255-105q150 0 255 105t105 255q0 43-9.5 83.5T763-360q66 0 111.5 47T920-200q0 66-47 113T760-40H520Zm-80-485Zm200 325Zm-120 80h240q33 0 56.5-23.5T840-200q0-33-23.5-56.5T760-280H520q-33 0-56.5 23.5T440-200q0 33 23.5 56.5T520-120Zm0-40q-17 0-28.5-11.5T480-200q0-17 11.5-28.5T520-240q17 0 28.5 11.5T560-200q0 17-11.5 28.5T520-160Zm120 0q-17 0-28.5-11.5T600-200q0-17 11.5-28.5T640-240q17 0 28.5 11.5T680-200q0 17-11.5 28.5T640-160Zm120 0q-17 0-28.5-11.5T720-200q0-17 11.5-28.5T760-240q17 0 28.5 11.5T800-200q0 17-11.5 28.5T760-160Z"/></svg></i>
-            <h4>Super fast check-In</h4>
-            <p>Tap the Rent icon in the Cabx app and complete your reservation. You can choose to pay in advance to save money.</p>
-        </div>
-        <div class="third">
-            <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z"/></svg></i>
-            <h4>No extra costs on arrival</h4>
-            <p>Tap the Rent icon in the Cabx app and complete your reservation. You can choose to pay in advance to save money.</p>
-        </div>
-    </div> */}
-    
-
-
       <div class="market">
         <h1>{text.market} <br /> {text.market1}</h1>
         <p>{text.market2}</p>
