@@ -1,6 +1,6 @@
 import React from 'react';
 import "./contact.css";
-import Footer from './Footer';
+import Footer from './Footer1';
 import Navbar from './MemberNav';
 export default function Contact2() {
   return (

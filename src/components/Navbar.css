@@ -101,7 +101,8 @@
       display: none;
       flex-direction: row;
       width: 100%;
-      background-color: transparent;
+      background-color: black;
+      color: aliceblue;
       position: absolute;
       top: 60px;
       text-align: end;

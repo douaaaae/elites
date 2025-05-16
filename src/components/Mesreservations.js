@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './mesreservation.css';
 import Navbar from './MemberNav';
-import Footer from './Footer';
+import Footer from './Footer1';
 
 const MesReservations = () => {
   const [reservations, setReservations] = useState([]);

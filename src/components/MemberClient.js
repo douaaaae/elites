@@ -2,7 +2,7 @@
 import { Link, useLocation } from "react-router-dom"
 import logo1 from "../images/P18_0435-removebg-preview.png"
 import Navbar from './MemberNav'
-import Footer from './Footer'
+import Footer from './Footer1'
 import "./Member.css";
 
 export default function MemberClient() {
@@ -172,11 +172,11 @@ export default function MemberClient() {
         </div>
       </div>
 
-      <div className="divm">
+      <div className="divn">
         <div>
-          <label>Brand</label><br />
+        
           <select value={filterMarque} onChange={(e) => setFilterMarque(e.target.value)}>
-            <option value="">Toutes</option>
+            <option value="">Brand</option>
             <option value="Citroën">Citroën</option>
             <option value="Renault">Renault</option>
             <option value="Hyundai">Hyundai</option>
@@ -187,9 +187,9 @@ export default function MemberClient() {
           </select>
         </div>
         <div>
-          <label>Speed</label><br />
+          
           <select value={filterBoite} onChange={(e) => setFilterBoite(e.target.value)}>
-            <option value="">Toutes</option>
+            <option value="">Speed</option>
             <option value="Automatique">Automatique</option>
             <option value="Manuelle">Manuelle</option>
           </select>

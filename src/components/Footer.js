@@ -1,56 +1,50 @@
-import React, { useState } from 'react'
-import "./Footes.css";
-import { FaMoon, FaLightbulb } from 'react-icons/fa';
+import React from 'react';
+import './Footes.css';
 import logo from "../images/elites__1_-removebg-preview.png"
-import { FaPhone, FaRegEnvelope, FaGlobe } from 'react-icons/fa'
-export default function Footer( {Language, setLanguage, darkMode, setDarkMode}) {
+import { FaArrowRight, FaPhone, FaGlobe, FaMoon, FaLightbulb, FaRegEnvelope } from 'react-icons/fa';
+
+export default function Footer1({ Language, setLanguage, darkMode, setDarkMode }) {
   return (
-    <div>
-      <div className='diviv'>
-        <div className='divid1'>
-            <div className="divid2">
-              <img src={logo} alt="" />
-              <p>Renting the best cars</p>
-              <p className='paragraph'>&copy; Copyright @2025</p>
-            </div>
-            <div className="divid3">
-               <h1>Sign up for our newsletter</h1>
-               <div className='inputs'>
-                <input type="text" readOnly placeholder='Enter your email address...' />
-                <button>Start a project</button>
-               </div>
-               <hr />
-            <div className='diviid'>
-                <div className="divid4">
-                 <p >Our story</p>
-                 <p >Trems of service</p>
-                 <p >Refund policy</p>
-                 <p>Help Center</p>
-               </div>
-               <div className="divid4">
-                <p>FAQS</p>
-                <p>Contact</p>
-                <p>Services</p>
-                <p>About the project</p>
-               </div>
-               <div className="divid4">
-                <p><FaPhone/> +212 645890329</p>
-                <p><FaRegEnvelope/> hajardouae@gmail.com</p>
-                <p><FaGlobe/></p>
-               </div>
-            </div>
-            <div className='wid23'>
+    <div className='vidid'>
+      <div className='vid1'>
+        <img src={logo} alt="" className='image14' />
+        <p className='paragraph' style={{textAlign:"center", marginRight:"50px"}}>Renting the best cars</p>
+        <p className='paragraph1'>&copy;Copyright 2025</p>
+      </div>
+      
+      <div className='vid2'>
+        <h3 className='head'>Sign up for our newsletter</h3>
+        <div className='div'>
+          <input type="text" placeholder='Enter your email address...' className='input90' readOnly />
+          <button className='btn78'>Start a project <span className='FaArrow'><FaArrowRight /></span></button>
+        </div>
+        <hr />
+        <div className="div3">
+          <div className="divid4">
+            <p>Our story</p>
+            <p>Terms of service</p>
+            <p>Refund policy</p>
+            <p>Help Center</p>
+          </div>
+          <div className="divid4">
+            <p>FAQS</p>
+            <p>Contact</p>
+            <p>Services</p>
+            <p>About the project</p>
+          </div>
+          <div className="divid4 div75">
+            <p><FaPhone /> +212 645890329</p>
+            <p><FaRegEnvelope /> hajardouae@gmail.com</p>
+            <p><FaGlobe /></p>
+          </div>
+        </div>
+        <div className='wid23'>
           <select className='select' name="" id="" value={Language} onChange={(e) => { setLanguage(e.target.value) }}>
             <option value="en">English</option>
-            <option value="sp">Español</option>
             <option value="fr">Français</option>
           </select>
-          <p className='pat' value={darkMode} onClick={() => setDarkMode(!darkMode)}> {darkMode ? <FaMoon /> : <FaLightbulb />} </p>
         </div>
-            </div>
-        </div>
-
       </div>
     </div>
-  )
+  );
 }

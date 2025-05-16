@@ -1,7 +1,7 @@
-/* .vidid{
+.vidid{
     display: flex;
     justify-content: space-evenly;
-    background-color: #333;
+     background-color: rgba(0, 0, 0, 0.865);
     color: whitesmoke;
     padding-top: 50px;
     height: auto;
@@ -10,7 +10,8 @@
     margin-right: 90px;
 }
 .image14{
-    width: 190px;
+    width: 140px;
+    margin-left: 30px;
 }
 .paragraph{
     margin-left: 40px;
@@ -27,12 +28,11 @@
     font-family: "Nunito", serif;
 }
 .input90{
-    height: 40px ;
+    height: 30px ;
     outline: none;
     background-color: transparent;
     border: 1px solid #797979;
     width: auto;
-    max-width: 400px;
     padding: 20px;
     size: 1188px;
     color: white;
@@ -40,8 +40,8 @@
 .btn78{
     background-color: whitesmoke;
     border-radius: 0%;
-    margin-left: 10px;
-
+    margin-left: 20px;
+    width: 300px;
 }
 .FaArrow{
     color: #656565;
@@ -97,8 +97,23 @@ hr{
         width: 40%;
         margin-bottom: 15px;
     }
+    .image14{
+    width: 140px;
+    margin-left:-20px;
+}
+.paragraph{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: "Nunito", serif;
+}
+.paragraph1{
+    margin-left: 10px;
+    margin-top: 236px;
+    font-family: "Nunito", serif;
+}
 }
 
+/* 📌 Mobile */
 @media (max-width: 480px) {
     .vidid {
         padding: 30px 10px;
@@ -115,4 +130,20 @@ hr{
         flex-direction: column;
         align-items: center;
     }
-} */
+}
+button{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  width: 180px;
+  height: 70px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+button:hover{
+  
+  transform: scale(1.02);
+}
+button:active{
+  transform: scale(0.9);
+}
