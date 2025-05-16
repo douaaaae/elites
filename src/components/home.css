@@ -434,6 +434,11 @@
   .divm{
     margin-top: -120px;
   }
+  .container button{
+    flex-wrap: wrap;
+    flex: 1;
+    margin-top: 20px;
+  }
 }
 
   
