@@ -196,6 +196,10 @@ hr{
 .vid1{
     margin-right: 90px;
 }
+.FaArrow{
+    color: #656565;
+    margin-left: 10px;
+}
 .image14{
     width: 140px;
     margin-left: 30px;
@@ -224,12 +228,12 @@ hr{
     size: 1188px;
     color: white;
 }
-.btn78{
+/* .btn78{
     background-color: whitesmoke;
     border-radius: 0%;
     margin-left: 20px;
     width: 300px;
-}
+} */
 .FaArrow{
     color: #656565;
     margin-left: 10px;
@@ -280,10 +284,10 @@ hr{
     .div3 {
         justify-content: center;
     }
-    .btn78 {
+  /*   .btn78 {
         width: 40%;
         margin-bottom: 15px;
-    }
+    } */
     .image14{
     width: 140px;
     margin-left:-20px;
@@ -309,16 +313,16 @@ hr{
         width: 40%;
         margin-top: 10px;
     }
-    .btn78 {
+   /*  .btn78 {
         width: 40%;
         margin-bottom: 15px;
-    }
+    } */
     .div3 {
         flex-direction: column;
         align-items: center;
     }
 }
-button{
+/* .btn78{
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -333,4 +337,4 @@ button:hover{
 }
 button:active{
   transform: scale(0.9);
-}
+} */

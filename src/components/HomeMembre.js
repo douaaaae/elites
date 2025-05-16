@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Link , useNavigate } from 'react-router-dom'
-import Navbar from './Navbar'
+import Navbar from './MemberNav'
 import logo1 from "../images/P18_0435-removebg-preview.png"
 import logo2 from "../images/download (12).jpeg"
 import car2 from "../images/car 2.jpeg"
