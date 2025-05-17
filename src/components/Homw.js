@@ -103,8 +103,8 @@ export default function Homw() {
           market6 : "Tap the Rent icon in the Cabx app and complete your reservation. You can choose to pay in advance to save money.",
         },
         fr :{
-          lim: "PUSHING THE LIMITS",
-          taglines :["FEELING THE RUSH","UNLEASH THE POWER","DRIVE THE LEGEND"],
+          lim: "POUSSER LES LIMITES",
+          taglines: ["RESSENTIR L'ADRÉNALINE", "LIBÉRER LA PUISSANCE", "CONDUIRE LA LÉGENDE"],
           pick : "Votre Age",
           ret : "votre Permis",
           pickd : "Date de prise en charge",
@@ -145,9 +145,6 @@ export default function Homw() {
     <div className='body225'>
       <Navbar/>
       <div className="idk">
-       {/* <div className="idk2">
-          <h1>PUSHING THE LIMITS <br /> FEELING THE RUSH</h1>
-       </div> */}
        <div className="idk2">
          <div className="hero-text">
             <h1 className="main-title">{text.lim}</h1>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import logo1 from "../images/P18_0435-removebg-preview.png";
-import Navbar from './MemberNav';
+import Navbar from './Navbar';
 import Footer from './Footer1';
 import "./Member.css";
 

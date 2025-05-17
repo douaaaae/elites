@@ -103,8 +103,8 @@ export default function Homw() {
           market6 : "Tap the Rent icon in the Cabx app and complete your reservation. You can choose to pay in advance to save money.",
         },
         fr :{
-          lim: "PUSHING THE LIMITS",
-          taglines :["FEELING THE RUSH","UNLEASH THE POWER","DRIVE THE LEGEND"],
+          lim: "POUSSER LES LIMITES",
+          taglines: ["RESSENTIR L'ADRÉNALINE", "LIBÉRER LA PUISSANCE", "CONDUIRE LA LÉGENDE"],
           pick : "Votre Age",
           ret : "votre Permis",
           pickd : "Date de prise en charge",
@@ -138,7 +138,7 @@ export default function Homw() {
 
     const handleSearch = () => {
         // Redirect to the search results page with query parameters
-        history(`/cars?age=${age}&license=${license}&pickupDate=${pickupDate}&returnDate=${returnDate}`);
+        history(`/cars2?age=${age}&license=${license}&pickupDate=${pickupDate}&returnDate=${returnDate}`);
     };
 
   return (

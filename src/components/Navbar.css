@@ -105,7 +105,9 @@
      .navbar-menu {
       display: none;
     }
-  
+    .img2{
+      margin-bottom: 10px;
+   }
     .navbar-menu.active {
       display: flex;
       flex-direction: column;
