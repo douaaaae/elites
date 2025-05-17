@@ -33,7 +33,7 @@ export default function Footer1({ Language, setLanguage, darkMode, setDarkMode }
             <p>About the project</p>
           </div>
           <div className="divid4 div75">
-            <p><FaPhone /> +212 645890329</p>
+            <p><FaPhone /> +212 612345678</p>
             <p><FaRegEnvelope /> hajardouae@gmail.com</p>
             <p><FaGlobe /></p>
           </div>
