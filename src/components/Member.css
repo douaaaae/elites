@@ -72,6 +72,7 @@
     font-size: 18px;
     margin-bottom: 40px;
   }
+<<<<<<< HEAD
   .card {   
     width:280px;
     background-color: #ffffff;
@@ -79,6 +80,17 @@
     border-radius: 21px 21px;
     height: 300px;
     margin-top: 40px;
+=======
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    color: black;
+    width: 90%;
+    height: 75%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+>>>>>>> 805b6121a5532f332812e6db5b1239681f0888ba
   }
   
   .card-img {
