@@ -198,7 +198,7 @@ export default function Member() {
               <p className="card-text">
                 <span className="price">{car.prix_par_jour} dh</span>
               </p>
-              <div style={{ borderRadius: "20px", height: "40px", paddingTop: "10px", display: "flex", justifyContent: "space-evenly", backgroundColor: "#e6e4e4" }}>
+              <div style={{ borderRadius: "20px", height: "40px", paddingTop: "10px", display: "flex", justifyContent: "space-evenly", backgroundColor: "#d3d2d2" }}>
                 <Link to="/signin"><a style={{ color: "brown", textDecoration: "none", cursor: "pointer" }} onClick={() => handlePopup(car, 'reservation')}>Reserver &gt;</a></Link>
                 <span className="line"></span>
                 <a style={{ color: "black", textDecoration: "none", cursor: "pointer" }} onClick={() => handlePopup(car, 'details')}>Details &gt;</a>

@@ -72,15 +72,13 @@
     font-size: 18px;
     margin-bottom: 40px;
   }
-  .card {
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    color: black;
-    width: 90%;
-    height: 85%;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  .card {   
+    width:280px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(203, 202, 202, 0.2); 
+    border-radius: 21px 21px;
+    height: 300px;
+    margin-top: 40px;
   }
   
   .card-img {
@@ -96,7 +94,14 @@
   .card a {
     cursor: pointer;
   }
+.line{
+    
+        width: 1px;
+        height: 20px; /* Adjust height as needed */
+        background-color: gray; /* Adjust color */
+        margin: 0 10px;
 
+}
   .btn{
     display: flex;
     justify-content: center;

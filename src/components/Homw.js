@@ -144,43 +144,40 @@ export default function Homw() {
   return (
     <div className='body225'>
       <Navbar/>
-      <div className="idk">
-       <div className="idk2">
-         <div className="hero-text">
-            <h1 className="main-title">{text.lim}</h1>
-            <h3 className="rotating-tagline" >{text.taglines[currentTaglineIndex]}</h3>
-         </div>
-       </div>
-        <div className="ima">
-            <img src={logo1} alt="" />
-        </div>
-        
-        <div class="divm">
-            <div>
-                <h5>{text.pick}</h5>
-                <input className='input55' type="text" placeholder="Enter Your age..." value={age} 
-                onChange={(e) => setAge(e.target.value)}   required/>
+            <div className="idk">
+              <div className="idk2">
+                <div className="hero-text">
+                  <h1 className="main-title">PUSHING THE LIMITS</h1>
+                  <h3 className="rotating-tagline">{currentTagline}</h3>
+                </div>
+              </div>
+      
+              <div className="ima">
+                <img src={logo1} alt="logo" />
+              </div>
+      
+              <div className="divm">
+                <div>
+                  <h5>Age</h5>
+                  <input className='input55' type="text"  placeholder="Enter your Age" />
+                </div>
+                <div>
+                  <h5>Permis</h5>
+                  <input className='input55' type="text"  placeholder="Enter your license"  />
+                </div>
+                <div>
+                  <h5>Pick Up Date</h5>
+                  <input className='input55' value={pickupDate} type="datetime-local" onChange={(e) => setPickupDate(e.target.value)} />
+                </div>
+                <div>
+                  <h5>Return Date</h5>
+                  <input className='input55' value={returnDate} type="datetime-local" onChange={(e) => setReturnDate(e.target.value)} />
+                </div>
+                <div className="container">
+                  <button style={{ color: "white", backgroundColor: "rgb(221, 29, 29)", width: "90px", marginTop: "30px" }}>Search Car</button>
+                </div>
+              </div>
             </div>
-            <div>
-                <h5>{text.ret}</h5>
-                <input className='input55' type="text" placeholder="Enter Your license..." value={license} 
-                onChange={(e) => setLicense(e.target.value)}  required/>
-            </div>
-            <div>
-                <h5>{text.pickd}</h5>
-                <input className='input55' type="datetime-local"  value={pickupDate} 
-                onChange={(e) => setPickupDate(e.target.value)} required style={{width:"200px"}} />
-            </div>
-            <div>
-                <h5>{text.retd}</h5>
-                <input className='input55' type="datetime-local" value={returnDate} 
-                onChange={(e) => setReturnDate(e.target.value)}   required style={{width:"200px"}}/>
-            </div>
-            <div class="container" style={{margin:"auto", display:"block"}}>
-               <button onClick={handleSearch} style={{color: "white", backgroundColor: "rgb(221, 29, 29)", width:"90px", marginTop:"30px"}}>Search Car</button>
-            </div>
-           </div>
-      </div>
           <div  style={{  display: "flex",flexWrap: "wrap",justifyContent: "center",alignItems: "flex-start",  padding: "60px 20px",  gap: "5%",   color: "black", paddingTop:"100px"}} className='divab'>
        <div style={{ maxWidth: "500px", flex: "1" }}>
         <h1 style={{ color: "maroon" }}>{text.abts}</h1>

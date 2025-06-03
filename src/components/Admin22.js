@@ -183,7 +183,7 @@ export default function Admin22() {
             <p className="card-text">
               <span className="price">{car.prix_par_jour} DH</span> 
             </p>
-            <div style={{ borderRadius: "20px", height: "40px", paddingTop: "10px", display: "flex", justifyContent: "space-evenly", backgroundColor: "#e6e4e4" }}>
+            <div style={{ borderRadius: "20px", height: "40px", paddingTop: "10px", display: "flex", justifyContent: "space-evenly", backgroundColor: "#d3d2d2" }}>
               <a style={{ color: "brown", textDecoration: "none" }} onClick={()=> openPopup(car, "details")}>Delete &gt;</a>
               <span className="line"></span>
               <a  style={{ color: "black", textDecoration: "none" }} onClick={()=> openPopup(car, "reservation")} > Edit &gt;</a>
