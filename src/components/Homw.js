@@ -173,8 +173,9 @@ export default function Homw() {
                   <h5>Return Date</h5>
                   <input className='input55' value={returnDate} type="datetime-local" onChange={(e) => setReturnDate(e.target.value)} />
                 </div>
-                <div className="container">
-                  <button style={{ color: "white", backgroundColor: "rgb(221, 29, 29)", width: "90px", marginTop: "30px" }}>Search Car</button>
+                <div className="container" style={{textDecoration:"none"}}>
+                  <Link to="/cars">
+                  <button style={{ color: "white", backgroundColor: "rgb(221, 29, 29)", width: "90px", marginTop: "30px" }}> Search Car </button></Link>
                 </div>
               </div>
             </div>

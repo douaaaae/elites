@@ -220,7 +220,7 @@ export default function MemberClient() {
 
           {popupType === 'details' && (
             <div id="detailsPopup" style={{ position: "fixed", top: "30%", left: "50%", transform: "translate(-50%, -30%)", backgroundColor: "#fff", padding: "20px", zIndex: 20, borderRadius: "20px", display: "flex", gap: "15px" }}>
-              <img src={selectedCar.image} alt="" style={{ height: "200px", width: "200px" }} />
+              <img src={selectedCar.image} alt="" style={{ height: "200px", width: "200px" }} className='image2' />
               <div>
                 <p><strong style={{ color: "maroon" }}>Brand:</strong> {selectedCar.marque}</p>
                 <p><strong style={{ color: "maroon" }}>Model:</strong> {selectedCar.modele}</p>
